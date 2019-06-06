@@ -165,8 +165,9 @@ namespace Talent.Services.Listing.Controllers
 
         [HttpGet("getSortedEmployerJobs")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "employer, recruiter")]
-        public async Task<IActionResult> GetSortedEmployerJobs(int activePage, string sortbyDate, bool showActive, bool showClosed, bool showDraft, bool showExpired, bool showUnexpired, string employerId = null, int limit = 6)
+        public async Task<IActionResult> GetSortedEmployerJobs(int activePage, string sortbyDate, bool showActive, bool showClosed, bool showDraft, bool showExpired, bool showUnexpired, string employerId = null, int limit = 2)
         {
+           
             try
             {
                 employerId = employerId == null ? _userAppContext.CurrentUserId : employerId;
@@ -177,7 +178,7 @@ namespace Talent.Services.Listing.Controllers
                     sortedJobs = sortedJobs.Where(x => x.Status != JobStatus.Active);
                 }
 
-                if(!showClosed)
+                if (!showClosed)
                 {
                     sortedJobs = sortedJobs.Where(x => x.Status != JobStatus.Closed);
                 }

@@ -24,3 +24,17 @@ C:\Talent-StandardTasks\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.Ass
 C:\Talent-StandardTasks\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.AssemblyInfo.cs
 C:\Talent-StandardTasks\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.dll
 C:\Talent-StandardTasks\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.pdb
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Api.deps.json
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Api.runtimeconfig.json
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Api.runtimeconfig.dev.json
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Api.dll
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Api.pdb
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Common.dll
+C:\dev\React\IndustryConnect\Talent\Talent.Api\bin\Debug\netcoreapp2.0\Talent.Common.pdb
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.csprojAssemblyReference.cache
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.csproj.CoreCompileInputs.cache
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.AssemblyInfoInputs.cache
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.AssemblyInfo.cs
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.csproj.CopyComplete
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.dll
+C:\dev\React\IndustryConnect\Talent\Talent.Api\obj\Debug\netcoreapp2.0\Talent.Api.pdb

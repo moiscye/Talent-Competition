@@ -31,3 +31,14 @@ C:\Talent-Competition\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talen
 C:\Talent-Competition\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.AssemblyInfo.cs
 C:\Talent-Competition\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.dll
 C:\Talent-Competition\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.pdb
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\bin\Debug\netcoreapp2.0\Talent.App.WebApp.deps.json
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\bin\Debug\netcoreapp2.0\Talent.App.WebApp.runtimeconfig.json
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\bin\Debug\netcoreapp2.0\Talent.App.WebApp.runtimeconfig.dev.json
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\bin\Debug\netcoreapp2.0\Talent.App.WebApp.dll
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\bin\Debug\netcoreapp2.0\Talent.App.WebApp.pdb
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.csprojAssemblyReference.cache
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.csproj.CoreCompileInputs.cache
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.AssemblyInfoInputs.cache
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.AssemblyInfo.cs
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.dll
+C:\dev\React\IndustryConnect\Talent\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.pdb
