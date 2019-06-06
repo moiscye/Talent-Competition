@@ -3,10 +3,6 @@ import Cookies from "js-cookie";
 import { Grid, Popup, Card, Button, Pagination } from "semantic-ui-react";
 import moment from "moment";
 
-const style = {
-  float: "right"
-};
-
 export class JobSummaryCard extends React.Component {
   constructor(props) {
     super(props);
@@ -46,30 +42,9 @@ export class JobSummaryCard extends React.Component {
       </Card>
     ));
 
-    const pagination = (
-      <Grid divided="vertically">
-        <Grid.Row columns={2}>
-          <Grid.Column />
-          <Grid.Column>
-            <Pagination
-              boundaryRange={0}
-              defaultActivePage={1}
-              ellipsisItem={null}
-              firstItem={null}
-              lastItem={null}
-              siblingRange={1}
-              totalPages={10}
-              onPageChange={this.props.handlePaginationChange}
-              style={style}
-            />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    );
     return (
       <div>
         <Card.Group itemsPerRow={2}>{cardData}</Card.Group>
-        {pagination}
       </div>
     );
   }

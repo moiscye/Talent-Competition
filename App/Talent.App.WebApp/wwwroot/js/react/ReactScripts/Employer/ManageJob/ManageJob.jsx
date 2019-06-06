@@ -6,15 +6,7 @@ import { LoggedInNavigation } from "../../Layout/LoggedInNavigation.jsx";
 import { JobSummaryCard } from "./JobSummaryCard.jsx";
 import { Filters } from "./Filters.jsx";
 import { BodyWrapper, loaderData } from "../../Layout/BodyWrapper.jsx";
-import {
-  Pagination,
-  Icon,
-  Dropdown,
-  Checkbox,
-  Accordion,
-  Form,
-  Segment
-} from "semantic-ui-react";
+import { JobPagination } from "./JobPagination.jsx";
 
 export default class ManageJob extends React.Component {
   constructor(props) {
@@ -53,18 +45,10 @@ export default class ManageJob extends React.Component {
   init() {
     let loaderData = TalentUtil.deepCopy(this.state.loaderData);
     loaderData.isLoading = false;
-    this.setState({ loaderData }); //comment this
-
-    //set loaderData.isLoading to false after getting data
-    //this.loadData(() =>
-    //    this.setState({ loaderData })
-    //)
-
-    //console.log(this.state.loaderData)
+    this.setState({ loaderData });
   }
 
   componentDidMount() {
-    //this.init();
     this.loadData();
   }
 
@@ -118,9 +102,6 @@ export default class ManageJob extends React.Component {
   }
 
   updateWithoutSave(newData) {
-    //let newSD = Object.assign({}, this.state.employerData, newData);
-    // console.log(newSD);
-
     this.setState({
       loadJobs: newData
     });
@@ -133,14 +114,14 @@ export default class ManageJob extends React.Component {
     filter["showExpired"] = true;
     filter["showUnexpired"] = true;
     filter[value] = false;
-    this.setState({ filter: filter }, function() {
+    this.setState({ filter: filter, activePage: 1 }, function() {
       this.loadData();
     });
   }
   handleCalendarChange(e, { value }) {
     let sortBy = {};
     sortBy["date"] = value;
-    this.setState({ sortBy: sortBy }, function() {
+    this.setState({ sortBy: sortBy, activePage: 1 }, function() {
       this.loadData();
     });
   }
@@ -151,6 +132,12 @@ export default class ManageJob extends React.Component {
   }
 
   render() {
+    let jobSummary = null;
+    if (this.state.loadJobs.length > 0) {
+      jobSummary = <JobSummaryCard loadJobs={this.state.loadJobs} />;
+    } else {
+      jobSummary = <h2>No Jobs Found!</h2>;
+    }
     return (
       <BodyWrapper reload={this.init} loaderData={this.state.loaderData}>
         <div className="ui container">
@@ -159,9 +146,10 @@ export default class ManageJob extends React.Component {
             handleFilterChange={this.handleFilterChange}
             handleCalendarChange={this.handleCalendarChange}
           />
-          <JobSummaryCard
-            loadJobs={this.state.loadJobs}
+          {jobSummary}
+          <JobPagination
             handlePaginationChange={this.handlePaginationChange}
+            activePage={this.state.activePage}
           />
         </div>
       </BodyWrapper>
